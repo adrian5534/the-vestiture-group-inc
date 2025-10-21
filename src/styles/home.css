@@ -1,23 +1,17 @@
-.home-topbar {
-  background: #0b0b0b;
-  color: #fff;
-  text-align: center;
-  padding: 0.5rem 0;
-  font-size: 0.95rem;
-}
-
+/* Main content sections - use more page width */
 .home-section {
   margin: 2rem auto;
-  max-width: 1200px;
-  padding: 0 1rem;
+  max-width: 1400px;
+  padding: 0 2rem;
 }
 
+/* CTA Banner */
 .home-cta-banner {
   background: var(--brand-card);
   border-radius: var(--bs-border-radius);
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   margin: 2rem auto;
-  max-width: 900px;
+  max-width: 1000px;
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -25,6 +19,7 @@
   font-size: 1.15rem;
 }
 
+/* Accent Button */
 .btn-accent {
   background: var(--brand-accent);
   color: var(--brand-accent-foreground);
@@ -39,41 +34,11 @@
   background: color-mix(in oklab, var(--brand-accent) 85%, black);
 }
 
-.home-footer {
-  background: #0b0b0b;
-  color: #fff;
-  padding: 2rem 1rem 1rem 1rem;
-}
-.footer-main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  justify-content: space-between;
-}
-.footer-main > div {
-  min-width: 220px;
-  flex: 1;
-}
-.footer-main ul {
-  list-style: none;
-  padding: 0;
-  margin: 0.5rem 0 0 0;
-}
-.footer-main li {
-  margin-bottom: 0.5rem;
-  font-size: 0.98rem;
-}
-
+/* Responsive adjustments */
 @media (max-width: 900px) {
-  .home-section, .home-cta-banner, .footer-main {
+  .home-section, .home-cta-banner {
     max-width: 100%;
-    padding: 0 0.5rem;
-  }
-  .footer-main {
-    flex-direction: column;
-    gap: 1.5rem;
+    padding: 0 1rem;
   }
   .home-cta-banner {
     flex-direction: column;
@@ -82,10 +47,10 @@
   }
 }
 
-/* header section */
+/* Header section */
 .home-header {
   margin: 2rem auto 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
   border-radius: var(--bs-border-radius-lg);
   overflow: hidden;
   position: relative;
@@ -99,6 +64,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+
+/* Overlay for header image */
+.home-header-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(11,11,11,0.55) 0%, rgba(0,119,182,0.25) 100%);
+  pointer-events: none;
+  z-index: 2;
 }
 
 .header-img {
@@ -106,15 +82,18 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  position: relative;
+  z-index: 1;
 }
 
 .home-header-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 3;
+  /* Remove background here if you want only the ::after overlay */
 }
 
 .home-header-content {
@@ -150,26 +129,15 @@
   justify-content: center;
 }
 
-.btn-accent,
-.btn-secondary {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: var(--bs-border-radius);
-  font-weight: 500;
-  border: none;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.btn-accent {
-  background: var(--brand-accent);
-  color: var(--brand-accent-foreground);
-}
-.btn-accent:hover {
-  background: color-mix(in oklab, var(--brand-accent) 85%, black);
-}
 .btn-secondary {
   background: var(--brand-secondary);
   color: var(--brand-secondary-foreground);
+  border: none;
+  border-radius: var(--bs-border-radius);
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 .btn-secondary:hover {
   background: color-mix(in oklab, var(--brand-secondary) 85%, black);
@@ -275,8 +243,8 @@
 }
 .featured-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
 }
 .featured-card {
   background: var(--brand-card);
@@ -319,15 +287,16 @@
   }
 }
 
+/* Instagram Section */
 .instagram-iframe-wrap {
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
   border-radius: var(--bs-border-radius);
   overflow: hidden;
 }
 
-/* Add to /Users/adrianreynolds/the-vestiture-group-inc/src/styles/home.css */
+/* Testimonials Section */
 .testimonials {
   margin-bottom: 2rem;
 }
@@ -343,7 +312,7 @@
 }
 .testimonials-grid {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 .testimonial-card {

@@ -1,0 +1,143 @@
+/* Top bar */
+.nav-topbar {
+  background: #0b0b0b;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  width: 100%;
+  z-index: 20;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem 1rem 2rem;
+  background: var(--brand-bg);
+  border-bottom: 1px solid var(--brand-border);
+  position: relative;
+  z-index: 10;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.navbar-logo {
+  width: 40px;
+  height: 40px;
+  background: var(--brand-fg);
+  border-radius: 50%;
+  display: inline-block;
+}
+.navbar-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  font-family: var(--bs-body-font-family);
+}
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: max-height 0.3s;
+}
+.navbar-links a {
+  color: var(--brand-fg);
+  font-size: 1.08rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.navbar-links a.active,
+.navbar-links a:hover {
+  color: var(--brand-secondary);
+}
+
+/* Burger button */
+.navbar-burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 1rem;
+}
+.navbar-burger span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background: var(--brand-fg);
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 1rem;
+  }
+  .navbar-title {
+    font-size: 1.1rem;
+  }
+  .navbar-logo {
+    width: 32px;
+    height: 32px;
+  }
+  .nav-topbar,
+  .home-topbar {
+    font-size: 0.92rem;
+    padding: 0.5rem 0.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+  }
+  .navbar-brand {
+    gap: 0.5rem;
+  }
+  .navbar-burger {
+    display: flex;
+  }
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background: var(--brand-bg);
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: max-height 0.3s, opacity 0.3s;
+  }
+  .navbar-links.open {
+    max-height: 400px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .navbar-links li {
+    margin: 0.5rem 0;
+  }
+  .nav-topbar,
+  .home-topbar {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.25rem;
+    word-break: break-word;
+  }
+}
