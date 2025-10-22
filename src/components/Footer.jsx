@@ -9,7 +9,6 @@ export default function Footer() {
           <p>
             Dual excellence in Electrical Services and Real Estate. Serving clients with precision, discretion, and style.
           </p>
-          <small>© The Vestiture Group Inc. All rights reserved.</small>
         </div>
         <div className="footer-links">
           <strong>Quick Links</strong>
@@ -29,6 +28,9 @@ export default function Footer() {
             <li>LinkedIn</li>
           </ul>
         </div>
+      </div>
+      <div className="footer-copyright">
+        <small>© The Vestiture Group Inc. All rights reserved.</small>
       </div>
     </footer>
   );
