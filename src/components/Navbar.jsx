@@ -31,6 +31,7 @@ export default function Navbar() {
           <li><Link to="/" className={pathname === '/' ? 'active' : ''} onClick={() => setOpen(false)}>Home</Link></li>
           <li><Link to="/about" className={pathname === '/about' ? 'active' : ''} onClick={() => setOpen(false)}>About</Link></li>
           <li><Link to="/services" className={pathname === '/services' ? 'active' : ''} onClick={() => setOpen(false)}>Services</Link></li>
+          <li><Link to="/projects" className={pathname === '/projects' ? 'active' : ''} onClick={() => setOpen(false)}>Projects</Link></li>
           <li><Link to="/contact" className={pathname === '/contact' ? 'active' : ''} onClick={() => setOpen(false)}>Contact</Link></li>
         </ul>
       </nav>

@@ -1,0 +1,170 @@
+{
+  "projects": [
+    {
+      "id": "p1",
+      "title": "Fifth Ave Penthouse — Electrical Retrofit",
+      "type": "Electrical • Residential",
+      "year": "2025",
+      "location": "Fifth Ave, NYC",
+      "images": [
+        "/images/featured-penthouse.jpg",
+        "/images/featured-penthouse.jpg",
+        "/images/featured-penthouse.jpg",
+        "/images/featured-penthouse.jpg",
+        "/images/featured-penthouse.jpg"
+      ],
+      "tags": ["Smart Lighting", "Panel Upgrade"],
+      "keywords": ["Luxury", "Smart Home", "Energy Efficient"],
+      "description": "A full electrical retrofit for a Fifth Ave penthouse, integrating programmable lighting scenes across living, entertaining, and private zones. Main service and panel upgrade supports increased load for high-end appliances and AV.",
+      "specs": [
+        { "label": "Service", "value": "200A upgrade, new main panel" },
+        { "label": "Lighting Control", "value": "Scene-based smart system" },
+        { "label": "Network", "value": "Low-voltage backbone for AV" },
+        { "label": "Timeline", "value": "10–14 weeks" },
+        { "label": "Budget", "value": "$150k–$250k" },
+        { "label": "Compliance", "value": "NEC, NYC DOB permits" }
+      ],
+      "related": [
+        {
+          "id": "p5",
+          "title": "Park Slope Townhouse — Smart Upgrade",
+          "type": "Residential",
+          "year": "2024",
+          "image": "/images/featured-penrthouse.jpg"
+        },
+        {
+          "id": "p6",
+          "title": "Chelsea Condo — Panel & Scenes",
+          "type": "Residential",
+          "year": "2023",
+          "image": "/images/featured-penrthouse.jpg"
+        },
+        {
+          "id": "p3",
+          "title": "Midtown Lobby — Lighting Control",
+          "type": "Commercial",
+          "year": "2024",
+          "image": "/images/featured-penrthouse.jpg"
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Brooklyn Brownstone — Listing & Sale",
+      "type": "Real Estate • Residential",
+      "year": "2024",
+      "location": "Brooklyn, NYC",
+      "images": [
+        "/images/featured-penrthouse.jpg",
+        "/images/featured-penrthouse-1.jpg",
+        "/images/featured-penrthouse-2.jpg",
+        "/images/featured-penrthouse-3.jpg"
+      ],
+      "tags": ["Staging", "Closed Above Ask"],
+      "keywords": ["Historic", "Renovated"],
+      "description": "Buyer representation and staging for a Brooklyn brownstone. Closed above asking price after strategic upgrades and marketing.",
+      "specs": [
+        { "label": "Sale Price", "value": "$2.1M" },
+        { "label": "Timeline", "value": "6 weeks" },
+        { "label": "Renovation", "value": "Kitchen, Bath, Lighting" },
+        { "label": "Staging", "value": "Full home staging" },
+        { "label": "Compliance", "value": "NYC DOB permits" }
+      ],
+      "related": []
+    },
+    {
+      "id": "p3",
+      "title": "Midtown Condo — Lobby Lighting",
+      "type": "Electrical • Commercial",
+      "year": "2025",
+      "location": "Midtown, NYC",
+      "images": [
+        "/images/featured-penrthouse.jpg",
+        "/images/featured-penrthouse-1.jpg",
+        "/images/featured-penrthouse-2.jpg",
+        "/images/featured-penrthouse-3.jpg"
+      ],
+      "tags": ["Architect Collab", "LED"],
+      "keywords": ["Commercial", "Lobby"],
+      "description": "Architectural lighting design and installation for a Midtown condo lobby. Collaboration with design team for custom LED fixtures.",
+      "specs": [
+        { "label": "Lighting", "value": "Custom LED fixtures" },
+        { "label": "Timeline", "value": "8 weeks" },
+        { "label": "Collaboration", "value": "Architect & Designer" },
+        { "label": "Budget", "value": "$80k" },
+        { "label": "Compliance", "value": "NYC DOB permits" }
+      ],
+      "related": []
+    },
+    {
+      "id": "p4",
+      "title": "SoHo Loft — Buyer Representation",
+      "type": "Real Estate • Residential",
+      "year": "2024",
+      "location": "SoHo, NYC",
+      "images": [
+        "/images/featured-penrthouse.jpg",
+        "/images/featured-penrthouse-1.jpg",
+        "/images/featured-penrthouse-2.jpg",
+        "/images/featured-penrthouse-3.jpg"
+      ],
+      "tags": ["Off-Market", "Negotiated"],
+      "keywords": ["Loft", "Negotiated"],
+      "description": "Secured off-market SoHo loft for client. Negotiated favorable terms and coordinated closing.",
+      "specs": [
+        { "label": "Sale Price", "value": "$3.5M" },
+        { "label": "Timeline", "value": "4 weeks" },
+        { "label": "Negotiation", "value": "Below asking price" },
+        { "label": "Compliance", "value": "NYC Real Estate Board" }
+      ],
+      "related": []
+    },
+    {
+      "id": "p5",
+      "title": "Townhouse — Service Upgrade",
+      "type": "Electrical • Residential",
+      "year": "2023",
+      "location": "Park Slope, NYC",
+      "images": [
+        "/images/featured-penrthouse.jpg",
+        "/images/featured-penrthouse-1.jpg",
+        "/images/featured-penrthouse-2.jpg",
+        "/images/featured-penrthouse-3.jpg"
+      ],
+      "tags": ["200A", "EV Charger"],
+      "keywords": ["Upgrade", "EV Charger"],
+      "description": "Electrical service upgrade and EV charger installation for Park Slope townhouse.",
+      "specs": [
+        { "label": "Service", "value": "200A upgrade" },
+        { "label": "EV Charger", "value": "Tesla Wall Connector" },
+        { "label": "Timeline", "value": "3 weeks" },
+        { "label": "Budget", "value": "$25k" },
+        { "label": "Compliance", "value": "NEC, NYC DOB permits" }
+      ],
+      "related": []
+    },
+    {
+      "id": "p6",
+      "title": "Upper East Side Co-op — Listing",
+      "type": "Real Estate • Residential",
+      "year": "2023",
+      "location": "Upper East Side, NYC",
+      "images": [
+        "/images/featured-penrthouse.jpg",
+        "/images/featured-penrthouse.jpg",
+        "/images/featured-penrthouse.jpg",
+        "/images/featured-penrthouse.jpg"
+      ],
+      "tags": ["Co-op", "Closed in 30 Days"],
+      "keywords": ["Co-op", "Fast Closing"],
+      "description": "Listed and sold Upper East Side co-op in under 30 days.",
+      "specs": [
+        { "label": "Sale Price", "value": "$1.2M" },
+        { "label": "Timeline", "value": "30 days" },
+        { "label": "Closing", "value": "Expedited" },
+        { "label": "Compliance", "value": "NYC Real Estate Board" }
+      ],
+      "related": []
+    }
+  ]
+}
